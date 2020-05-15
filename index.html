@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf8" />
+		<meta
+			http-equiv="Content-Sercurity-Policy"
+			content="default-src 'self';script-src 'self' 'unsafe-inline';content-src *"
+		/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="./app/style.css" type="text/css" />
+		<title>BookMarks</title>
+	</head>
+
+	<body>
+		<h1>BookMarker</h1>
+		<div class="errorMessage"></div>
+
+		<section class="add-new-link">
+			<form class="newLinkForm">
+				<input type="url" class="newLinkUrl" placeholder="Url" size="100" required />
+				<input type="submit" class="newLinkSubmit" value="提交" disabled />
+			</form>
+		</section>
+
+		<section class="links"></section>
+
+		<section class="controls">
+			<button class="clearStorage">清除所有</button>
+		</section>
+	</body>
+
+	<script>
+		require("./app/renderer.js");
+	</script>
+</html>
